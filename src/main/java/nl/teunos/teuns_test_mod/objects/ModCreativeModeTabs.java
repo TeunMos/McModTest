@@ -1,4 +1,4 @@
-package nl.teunos.teuns_test_mod.item;
+package nl.teunos.teuns_test_mod.objects;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -19,6 +19,9 @@ public class ModCreativeModeTabs {
         .displayItems((parameters, output) -> {
             // ITEMS GO HERE
             output.accept(ModTestItems.POEPIE.get());
+
+            // BLOCKS GO HERE
+            output.accept(ModTestBlocks.POEPIE_BLOCK.get());
         })
         .build()
     );

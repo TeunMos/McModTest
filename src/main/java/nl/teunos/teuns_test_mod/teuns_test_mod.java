@@ -27,8 +27,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import nl.teunos.teuns_test_mod.item.ModCreativeModeTabs;
-import nl.teunos.teuns_test_mod.item.ModTestItems;
+import nl.teunos.teuns_test_mod.objects.ModCreativeModeTabs;
+import nl.teunos.teuns_test_mod.objects.ModTestBlocks;
+import nl.teunos.teuns_test_mod.objects.ModTestItems;
 
 import org.slf4j.Logger;
 
@@ -47,9 +48,9 @@ public class teuns_test_mod
 
 
         // Register Custom Items
-        ModCreativeModeTabs.register(modEventBus);
         ModTestItems.register(modEventBus);
-
+        ModTestBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

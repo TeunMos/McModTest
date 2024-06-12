@@ -1,4 +1,4 @@
-package nl.teunos.teuns_test_mod.item;
+package nl.teunos.teuns_test_mod.objects;
 import nl.teunos.teuns_test_mod.teuns_test_mod;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

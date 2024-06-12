@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "teuns_test_mod:block/poepie_block"
+    }
+}
