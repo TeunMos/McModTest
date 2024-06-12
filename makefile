@@ -1,0 +1,2 @@
+build:
+	bash ./gradlew build
