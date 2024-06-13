@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "categories": "misc",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "teuns_test_mod:poepie"
+        }
+    },
+    "result": {
+        "id": "teuns_test_mod:poepie_block",
+        "count": 1
+    }
+}

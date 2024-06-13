@@ -18,7 +18,7 @@ public class ModTestItems {
         .effect(new MobEffectInstance(MobEffects.POISON, 600, 1), 1.0f)
         .effect(new MobEffectInstance(MobEffects.HUNGER, 600, 1), 1.0f)
         .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 1), 1.0f)
-        .nutrition(1).saturationModifier(0.1f)
+        .nutrition(-13).saturationModifier(0.1f)
         .build();
 
     public static final RegistryObject<Item> POEPIE = ITEMS.register("poepie",

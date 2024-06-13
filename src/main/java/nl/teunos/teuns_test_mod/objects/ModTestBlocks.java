@@ -20,7 +20,8 @@ public class ModTestBlocks {
 
     
     public static final RegistryObject<Block> POEPIE_BLOCK = registerBlock("poepie_block", 
-        () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK)));
+        () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK))
+    );
     
 
     // Function for registering blocks and their corresponding block items

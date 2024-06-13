@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "categories": "misc",
+    "ingredients": [
+        {
+            "item": "teuns_test_mod:poepie_block"
+        }
+    ],
+    "result": {
+        "id": "teuns_test_mod:poepie",
+        "count": 9
+    }
+}
