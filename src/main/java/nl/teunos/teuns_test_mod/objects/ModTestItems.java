@@ -1,5 +1,7 @@
 package nl.teunos.teuns_test_mod.objects;
 import nl.teunos.teuns_test_mod.teuns_test_mod;
+import nl.teunos.teuns_test_mod.objects.customTest.CustomPoepItem;
+import nl.teunos.teuns_test_mod.objects.customTest.TestItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,10 +23,11 @@ public class ModTestItems {
         .nutrition(-13).saturationModifier(0.1f)
         .build();
 
-    public static final RegistryObject<Item> POEPIE = ITEMS.register("poepie",
-        () -> new Item(new Item.Properties().food(POEPFOOD)));
+    // public static final RegistryObject<Item> POEPIE = ITEMS.register("poepie",
+    //     () -> new Item(new Item.Properties().food(POEPFOOD)));
 
-    
+    public static final RegistryObject<Item> POEPIE = ITEMS.register("poepie",
+        () -> new CustomPoepItem(new Item.Properties().durability(100).food(POEPFOOD)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
