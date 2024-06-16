@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import nl.teunos.teuns_test_mod.objects.customTest.TestBlock;
 import nl.teunos.teuns_test_mod.teuns_test_mod;
 
 public class ModTestBlocks {
@@ -20,7 +21,7 @@ public class ModTestBlocks {
 
     
     public static final RegistryObject<Block> POEPIE_BLOCK = registerBlock("poepie_block", 
-        () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK))
+        () -> new TestBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK))
     );
     
 

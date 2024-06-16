@@ -1,15 +1,14 @@
 package nl.teunos.teuns_test_mod.objects;
-import nl.teunos.teuns_test_mod.teuns_test_mod;
-import nl.teunos.teuns_test_mod.objects.customTest.CustomPoepItem;
-import nl.teunos.teuns_test_mod.objects.customTest.TestItem;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+import nl.teunos.teuns_test_mod.objects.customTest.CustomPoepItem;
+import nl.teunos.teuns_test_mod.teuns_test_mod;
 
 public class ModTestItems {
     public static final DeferredRegister<Item> ITEMS = 
@@ -27,7 +26,7 @@ public class ModTestItems {
     //     () -> new Item(new Item.Properties().food(POEPFOOD)));
 
     public static final RegistryObject<Item> POEPIE = ITEMS.register("poepie",
-        () -> new CustomPoepItem(new Item.Properties().durability(100).food(POEPFOOD)));
+        () -> new CustomPoepItem(new Item.Properties().durability(10).food(POEPFOOD)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
