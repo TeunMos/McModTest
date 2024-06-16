@@ -54,7 +54,8 @@ public class CustomPoepItem extends Item {
             BlockPos pos = context.getClickedPos();
             BlockState state = context.getLevel().getBlockState(pos);
 
-            if (!(state.getBlock() == ModTestBlocks.POEPIE_BLOCK.get())) {
+            // if (!(state.getBlock() == ModTestBlocks.POEPIE_BLOCK.get())) {
+            if (state.is(TestTags.Blocks.POOPABLES)) {
                 context.getLevel().setBlock(pos, ModTestBlocks.POEPIE_BLOCK.get().defaultBlockState(), 0);
 
                 context.getItemInHand().hurtAndBreak(1, 
